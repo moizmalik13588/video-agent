@@ -1,13 +1,14 @@
 # ── Audio / Video acquisition ──
 yt-dlp>=2024.4.9
 pydub>=0.25.1
-audioop-lts>=0.2.1
+audioop-lts>=0.2.1                # Required for pydub on Python 3.13+
 ffmpeg-python>=0.2.0
 
-# ── Speech-to-Text ──
+# ── Speech-to-Text & Computer Vision ──
 openai-whisper>=20231117
 torch>=2.2.0
 torchaudio>=2.2.0
+torchvision>=0.17.0               # Added: Fixes transformers/image_processing error
 
 # ── Translation ──
 deep-translator>=1.11.4
